@@ -1,0 +1,32 @@
+{
+    "id": "AE79B48E",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1605826329274.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "expression": "finance_data",
+        "caption": "finance_data",
+        "totalObservations": "240",
+        "displayedObservations": "240",
+        "variables": "5",
+        "cacheKey": "28DAB2FB",
+        "object": "finance_data",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=finance_data&cache_key=28DAB2FB&max_cols=50",
+        "preview": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 140443546925724,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1605826329274,
+    "read_only": false,
+    "read_only_alternatives": []
+}

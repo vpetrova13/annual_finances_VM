@@ -1,0 +1,25 @@
+{
+    "id": "3F70FD5B",
+    "path": "~/annual_finances/cleanning_data/cleaning_finance_data.R",
+    "project_path": "cleaning_finance_data.R",
+    "type": "r_source",
+    "hash": "274860685",
+    "contents": "",
+    "dirty": false,
+    "created": 1605387395200.0,
+    "source_on_save": false,
+    "relative_order": 5,
+    "properties": {
+        "tempName": "Untitled1",
+        "cursorPosition": "75,76",
+        "scrollLine": "68"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1606424875,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1606424875241,
+    "read_only": false,
+    "read_only_alternatives": []
+}

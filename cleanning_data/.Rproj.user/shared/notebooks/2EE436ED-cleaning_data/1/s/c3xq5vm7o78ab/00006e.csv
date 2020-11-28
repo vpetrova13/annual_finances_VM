@@ -1,0 +1,7 @@
+"0","finance_data_clean <- finance_data %>% "
+"0","  mutate(date = str_remove(date, ""^[0-9]{2}\\/"")) %>% "
+"0","  mutate(description = str_to_lower(description)) %>% "
+"0","  mutate(description = str_remove(description, ""\\'"")) %>% "
+"0","  mutate(description = str_sub(description, 1, 40)) "
+"0",""
+"0","finance_data_clean"
