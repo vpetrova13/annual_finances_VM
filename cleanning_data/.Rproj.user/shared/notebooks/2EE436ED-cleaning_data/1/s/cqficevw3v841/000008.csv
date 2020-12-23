@@ -1,5 +1,0 @@
-"0","finance_data <- raw_data %>% "
-"0","  clean_names() %>% "
-"0","  select(-account_number, -account_name, -x8)"
-"0",""
-"0","finance_data"

@@ -1,0 +1,26 @@
+---
+title: "analysis of finances"
+author: "VM"
+date: "22/12/2020"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+library(here)
+
+finance <- read_csv(here("clean_data/finance_clean_data.csv"))
+head(finance)
+```
+#How many times my balance was negative per months? 
+```{r}
+finance %>% 
+  group_by(date) %>% 
+  mutate(total_per_month = n()) %>% 
+  filter(balance < 0) %>% 
+  summarise(times_minus_balance = (n()/total_per_month)*100) %>% 
+  slice_max(n = 5, order_by = times_minus_balance, with_ties = FALSE)
+
+```
+
+
