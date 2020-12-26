@@ -12,15 +12,42 @@ library(here)
 finance <- read_csv(here("clean_data/finance_clean_data.csv"))
 head(finance)
 ```
-#How many times my balance was negative per months? 
+```{r}
+finance %>% 
+  group_by(categories) %>% 
+  summarise(total = sum(value)) %>% 
+  filter(total < 0) %>% 
+  arrange(total)
+```
+
+```{r}
+finance %>% 
+  group_by(categories) %>% 
+  summarise(total = sum(value)) %>% 
+  ggplot() +
+  aes(x = reorder(categories, total), y = total, fill = categories) +
+  geom_col(colour = "black") +
+  coord_flip() +
+  scale_y_continuous(breaks = seq(-10000, 20000, by = 2000)) +
+  theme_light() +
+  theme(legend.position = "none")
+```
+
+#How many times my balance was negative per months? I calculated in percentage as depending how many transactions were done per month, it appeared on my balance. 
 ```{r}
 finance %>% 
   group_by(date) %>% 
   mutate(total_per_month = n()) %>% 
   filter(balance < 0) %>% 
-  summarise(times_minus_balance = (n()/total_per_month)*100) %>% 
-  slice_max(n = 5, order_by = times_minus_balance, with_ties = FALSE)
+  summarise(times_minus_balance = n()/total_per_month*100) %>% 
+  slice_max(n = 1, order_by = times_minus_balance, with_ties = FALSE) %>% 
+  mutate(times_minus_balance = round(times_minus_balance, 2)) %>% 
+  arrange(desc(times_minus_balance))
+```
+In June, 2020 my balance was in negative state 95.65%. It means that every time there was transaction and balance was updated it was negative. 
+```{r}
 
 ```
+
 
 
