@@ -12,14 +12,22 @@ library(here)
 finance <- read_csv(here("clean_data/finance_clean_data.csv"))
 head(finance)
 ```
+Total spending by categories. Total gains by categories.
 ```{r}
 finance %>% 
   group_by(categories) %>% 
   summarise(total = sum(value)) %>% 
   filter(total < 0) %>% 
   arrange(total)
-```
 
+
+finance %>% 
+  group_by(categories) %>% 
+  summarise(total = sum(value)) %>% 
+  filter(total > 0) %>% 
+  arrange(desc(total))
+```
+Graph showing gains and spendings over one year.
 ```{r}
 finance %>% 
   group_by(categories) %>% 
@@ -31,6 +39,28 @@ finance %>%
   scale_y_continuous(breaks = seq(-10000, 20000, by = 2000)) +
   theme_light() +
   theme(legend.position = "none")
+```
+```{r}
+finance %>% 
+  group_by(type) %>% 
+  summarise(each = n()) %>% 
+  arrange(desc(each))
+```
+```{r}
+finance %>% 
+  filter(is.na(type))
+```
+```{r}
+finance %>% 
+  group_by(categories) %>% 
+  summarise(each = n()) %>% 
+  arrange(desc(each))
+```
+```{r}
+finance %>% 
+  ggplot() +
+  aes(x = date, y = value, fill = categories) +
+  geom_col()
 ```
 
 #How many times my balance was negative per months? I calculated in percentage as depending how many transactions were done per month, it appeared on my balance. 
@@ -44,7 +74,7 @@ finance %>%
   mutate(times_minus_balance = round(times_minus_balance, 2)) %>% 
   arrange(desc(times_minus_balance))
 ```
-In June, 2020 my balance was in negative state 95.65%. It means that every time there was transaction and balance was updated it was negative. 
+In June, 2020 my balance was in negative state 95.65%. It means that every time there was transaction and balance was updated, it was negative. 
 ```{r}
 
 ```
