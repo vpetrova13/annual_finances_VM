@@ -10,9 +10,15 @@ library(tidyverse)
 library(here)
 
 finance <- read_csv(here("clean_data/finance_clean_data.csv"))
+finance <- finance %>% 
+  mutate(date = factor(date, levels = c("09/2019", "10/2019", "11/2019",
+                                        "12/2019", "01/2020", "02/2020",
+                                        "03/2020", "04/2020", "05/2020",
+                                        "06/2020", "07/2020", "08/2020",
+                                        "09/2020")))
 head(finance)
 ```
-Total spending by categories. Total gains by categories.
+Total spendings and gains by categories. 
 ```{r}
 finance %>% 
   group_by(categories) %>% 
@@ -27,6 +33,9 @@ finance %>%
   filter(total > 0) %>% 
   arrange(desc(total))
 ```
+Most gains were from salary and most spendings to personal - big category.
+Personal - big is names because the cost of a thing is more than £500.
+
 Graph showing gains and spendings over one year.
 ```{r}
 finance %>% 
@@ -34,21 +43,38 @@ finance %>%
   summarise(total = sum(value)) %>% 
   ggplot() +
   aes(x = reorder(categories, total), y = total, fill = categories) +
-  geom_col(colour = "black") +
+  geom_col() +
   coord_flip() +
   scale_y_continuous(breaks = seq(-10000, 20000, by = 2000)) +
   theme_light() +
   theme(legend.position = "none")
 ```
+#How many each type was during the year? 
 ```{r}
 finance %>% 
   group_by(type) %>% 
   summarise(each = n()) %>% 
   arrange(desc(each))
 ```
+There was more direct debit payments than anything else. Loan was paid only once. The card is mostly used for direct debit while credit card (digital banking payment) for anything else such as food, petrol, etc.
 ```{r}
 finance %>% 
   filter(is.na(type))
+```
+Check NA value and it appeared to be coming from credit card as a gain. Maybe recalculation in charges of credit card.
+```{r}
+finance %>% 
+  filter(type == "digital banking payment") %>% 
+  ggplot() +
+  aes(x = categories, y = value, fill = categories) +
+  geom_col() +
+  theme_light() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5)) +
+  labs(
+    title = "Spends and gains by types over the year",
+    x = "Categories",
+    y = "Value"
+  ) 
 ```
 ```{r}
 finance %>% 
@@ -56,13 +82,36 @@ finance %>%
   summarise(each = n()) %>% 
   arrange(desc(each))
 ```
+It shows how many times each category appeared on balance.
 ```{r}
 finance %>% 
+  filter(!categories %in% c("council tax", "rent", "salary", "car insurance", "utility bills")) %>% 
   ggplot() +
   aes(x = date, y = value, fill = categories) +
-  geom_col()
+  geom_col()  +
+  theme_light() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5)) +
+  labs(
+    title = "Spends and gains by categories over the year",
+    x = "Months",
+    y = "Value"
+  ) 
 ```
-
+```{r}
+finance %>% 
+  filter(categories %in% c("personal - big", "personal - small")) %>% 
+  ggplot() +
+  aes(x = date, y = value, fill = categories) +
+  geom_col()  +
+  theme_light() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5)) +
+  labs(
+    title = "Spends and gains by categories over the year",
+    x = "Months",
+    y = "Value"
+  ) +
+  facet_wrap(~categories)
+```
 #How many times my balance was negative per months? I calculated in percentage as depending how many transactions were done per month, it appeared on my balance. 
 ```{r}
 finance %>% 
@@ -76,7 +125,30 @@ finance %>%
 ```
 In June, 2020 my balance was in negative state 95.65%. It means that every time there was transaction and balance was updated, it was negative. 
 ```{r}
+finance %>% 
+  filter(date == "06/2020") %>% 
+  ggplot() +
+  aes(x = categories, y = value, fill = categories) +
+  geom_col() +
+  theme_light() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5)) +
+  labs(
+    title = "Spends and gains by categories at particular month",
+    x = "Categories",
+    y = "Value"
+  ) 
+```
+```{r}
+finance %>% 
+  filter(date == "06/2020") %>%
+  filter(value < 0) %>% 
+  summarise(total = sum(value))
 
+
+finance %>% 
+  filter(date == "06/2020") %>%
+  filter(value > 0) %>% 
+  summarise(total = sum(value))
 ```
 
 
