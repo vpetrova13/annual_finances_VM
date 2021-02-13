@@ -33,8 +33,8 @@ finance %>%
   filter(total > 0) %>% 
   arrange(desc(total))
 ```
-Most gains were from salary and most spendings to personal - big category.
-Personal - big is names because the cost of a thing is more than £500.
+Most gains were from salary and most spendings were due to personal - big category.
+Personal - big is names because the cost of a product was more than £500.
 
 Graph showing gains and spendings over one year.
 ```{r}
@@ -56,12 +56,12 @@ finance %>%
   summarise(each = n()) %>% 
   arrange(desc(each))
 ```
-There was more direct debit payments than anything else. Loan was paid only once. The card is mostly used for direct debit while credit card (digital banking payment) for anything else such as food, petrol, etc.
+There were more direct debit payments than anything else. Loan was paid only once. The card is mostly used for direct debit while credit card (digital banking payment) for anything else such as food, petrol, etc.
 ```{r}
 finance %>% 
   filter(is.na(type))
 ```
-Check NA value and it appeared to be coming from credit card as a gain. Maybe recalculation in charges of credit card.
+Check NA value and it appeared to be coming from credit card as a gain. Maybe recalculation in charges of the credit card.
 ```{r}
 finance %>% 
   filter(type == "digital banking payment") %>% 
@@ -138,6 +138,7 @@ finance %>%
     y = "Value"
   ) 
 ```
+#gains and spends for the June 2020.
 ```{r}
 finance %>% 
   filter(date == "06/2020") %>%
@@ -150,6 +151,6 @@ finance %>%
   filter(value > 0) %>% 
   summarise(total = sum(value))
 ```
-
+#spendings and gains over June in 2020. 
 
 
