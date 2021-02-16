@@ -47,7 +47,12 @@ finance %>%
   coord_flip() +
   scale_y_continuous(breaks = seq(-10000, 20000, by = 2000)) +
   theme_light() +
-  theme(legend.position = "none")
+  theme(legend.position = "none") +
+  labs(
+    title = "Total earnings and spendings throughout the year",
+    y = "Total £",
+    x = "Categories"
+  )
 ```
 #How many each type was during the year? 
 ```{r}
@@ -73,7 +78,7 @@ finance %>%
   labs(
     title = "Spends and gains by types over the year",
     x = "Categories",
-    y = "Value"
+    y = "Total £"
   ) 
 ```
 ```{r}
@@ -94,7 +99,7 @@ finance %>%
   labs(
     title = "Spends and gains by categories over the year",
     x = "Months",
-    y = "Value"
+    y = "Total £"
   ) 
 ```
 ```{r}
@@ -135,7 +140,7 @@ finance %>%
   labs(
     title = "Spends and gains by categories at particular month",
     x = "Categories",
-    y = "Value"
+    y = "Total £"
   ) 
 ```
 #gains and spends for the June 2020.
