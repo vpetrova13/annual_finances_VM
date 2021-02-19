@@ -6,8 +6,9 @@ dashboardPage(
                 min = 0, max = 50, value = 3, step = 0.1
     ),
     sidebarMenu(
-      menuItem("Dashboard", tabName = "dashboard"),
-      menuItem("Raw data", tabName = "rawdata")
+      sidebarPanel(
+        pickerInput("category","Categories", choices=unique(finance$categories), 
+                    options = list(`actions-box` = TRUE),multiple = T)
     )
   ),
   dashboardBody(
@@ -32,6 +33,7 @@ dashboardPage(
                   plotOutput("month_plot")
                 )
               )
+      )  
       )
     )
   )
