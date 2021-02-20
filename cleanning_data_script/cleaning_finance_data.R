@@ -2,6 +2,7 @@
 library(tidyverse)
 library(janitor)
 library(here)
+library(lubridate)
 
 raw_data <- read_csv(here("raw_data/MOROZV10660239-20201101.csv"))
 
@@ -129,8 +130,13 @@ finance_data_clean <- finance_data_clean %>%
                                 description == "happy  beds  dewsbury  refund" ~ "bonus",
                                 description == "vitalij  petrov  debt  online  pymt" ~ "parents"))
 
+## Change date column from character to date type
+finance_data_clean <- finance_data_clean %>% 
+  mutate(date = parse_date_time(date, "my")) %>% 
+  mutate(date = as.Date(date, "%Y-%m-%d"))
+
+
+
 ## Write csv file of clean data
-write_csv(finance_data_clean, "finance_clean_data.csv")
-
-
+#write_csv(finance_data_clean, "finance_clean_data.csv")
 

@@ -11,7 +11,8 @@ create_cat_year <- function(input, data) {
         title = "Spends and gains by categories over the year",
         x = "Months",
         y = "Total £"
-      ) 
+      ) +
+      scale_x_continuous(breaks = c("09/2019","09/2020"))
   }
   )
 }
