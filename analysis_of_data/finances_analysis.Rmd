@@ -5,17 +5,13 @@ date: "22/12/2020"
 output: html_document
 ---
 
+
 ```{r}
 library(tidyverse)
 library(here)
 
 finance <- read_csv(here("clean_data/finance_clean_data.csv"))
-finance <- finance %>% 
-  mutate(date = factor(date, levels = c("09/2019", "10/2019", "11/2019",
-                                        "12/2019", "01/2020", "02/2020",
-                                        "03/2020", "04/2020", "05/2020",
-                                        "06/2020", "07/2020", "08/2020",
-                                        "09/2020")))
+
 head(finance)
 ```
 Total spendings and gains by categories. 
@@ -100,7 +96,8 @@ finance %>%
     title = "Spends and gains by categories over the year",
     x = "Months",
     y = "Total £"
-  ) 
+  ) +
+  scale_x_date(date_breaks = "1 month", date_labels = "%b %y")
 ```
 ```{r}
 finance %>% 
@@ -115,7 +112,8 @@ finance %>%
     x = "Months",
     y = "Value"
   ) +
-  facet_wrap(~categories)
+  facet_wrap(~categories) +
+  scale_x_date(date_breaks = "1 month", date_labels = "%b %y")
 ```
 #How many times my balance was negative per months? I calculated in percentage as depending how many transactions were done per month, it appeared on my balance. 
 ```{r}
@@ -131,7 +129,7 @@ finance %>%
 In June, 2020 my balance was in negative state 95.65%. It means that every time there was transaction and balance was updated, it was negative. 
 ```{r}
 finance %>% 
-  filter(date == "06/2020") %>% 
+  filter(date == "2020-06-01") %>% 
   ggplot() +
   aes(x = categories, y = value, fill = categories) +
   geom_col() +
@@ -146,13 +144,13 @@ finance %>%
 #gains and spends for the June 2020.
 ```{r}
 finance %>% 
-  filter(date == "06/2020") %>%
+  filter(date == "2020-06-01") %>%
   filter(value < 0) %>% 
   summarise(total = sum(value))
 
 
 finance %>% 
-  filter(date == "06/2020") %>%
+  filter(date == "2020-06-01") %>%
   filter(value > 0) %>% 
   summarise(total = sum(value))
 ```

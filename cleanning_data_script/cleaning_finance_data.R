@@ -132,11 +132,14 @@ finance_data_clean <- finance_data_clean %>%
 
 ## Change date column from character to date type
 finance_data_clean <- finance_data_clean %>% 
-  mutate(date = parse_date_time(date, "my")) %>% 
-  mutate(date = as.Date(date, "%Y-%m-%d"))
+  #add days
+  mutate(date = str_c(date, "/01")) %>% 
+  #change to date type
+  mutate(date = myd(date))
 
-
+#check class of date column
+class(finance_data_clean$date)
 
 ## Write csv file of clean data
-#write_csv(finance_data_clean, "finance_clean_data.csv")
+write_csv(finance_data_clean, "finance_clean_data.csv")
 
