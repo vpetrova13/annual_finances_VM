@@ -101,6 +101,15 @@ finance %>%
 ```
 ```{r}
 finance %>% 
+  mutate(absolute = abs(value)) %>% 
+  group_by(date, categories) %>% 
+  summarise(total = sum(absolute)) %>% 
+  slice_max(total,n=1) %>% 
+  ungroup() 
+```
+
+```{r}
+finance %>% 
   filter(categories %in% c("personal - big", "personal - small")) %>% 
   ggplot() +
   aes(x = date, y = value, fill = categories) +

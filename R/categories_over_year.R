@@ -12,7 +12,8 @@ create_cat_year <- function(input, data) {
         x = "Months",
         y = "Total £"
       ) +
-      scale_x_continuous(breaks = c("09/2019","09/2020"))
+      scale_x_date(date_breaks = "1 month", date_labels = "%b %y") +
+      geom_hline(yintercept=0, linetype="dashed")
   }
   )
 }
