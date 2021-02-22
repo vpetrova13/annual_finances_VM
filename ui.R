@@ -26,7 +26,8 @@ dashboardPage(
       theme = "poor_mans_flatly"),
               fluidRow(
                 infoBoxOutput("highest_month"),
-                valueBoxOutput("highest_count")
+                infoBoxOutput("highest_category"),
+                infoBoxOutput("highest_count")
               ),
               fluidRow(
                 tabBox( width = 12,

@@ -1,6 +1,6 @@
-month_infobox <- function(input, data) {
+category_infobox <- function(input, data) {
   renderInfoBox({
-    month_value <- finance %>% 
+    category_value <- finance %>% 
       filter(categories == input$category) %>% 
       mutate(absolute = abs(value)) %>% 
       group_by(date, categories) %>% 
@@ -8,11 +8,11 @@ month_infobox <- function(input, data) {
       arrange(desc(total)) %>% 
       head(1)
     
-    date_show <- format(month_value$date,'%b %Y')
+    category_value <- str_to_title(category_value$categories)
     
     infoBox(
-      "Month", paste0(date_show), icon = icon("calendar"),
-      color = "teal", fill = TRUE
+      "Category", paste0(category_value), icon = icon("list"),
+      color = "maroon", fill = TRUE
     )
     
   }

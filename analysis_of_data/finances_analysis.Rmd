@@ -101,13 +101,14 @@ finance %>%
 ```
 ```{r}
 finance %>% 
+  filter(categories %in% c("savings", "LISA")) %>% 
   mutate(absolute = abs(value)) %>% 
   group_by(date, categories) %>% 
   summarise(total = sum(absolute)) %>% 
-  slice_max(total,n=1) %>% 
-  ungroup() 
+  arrange(desc(total)) %>% 
+  head(1)
 ```
-
+#Choosing the category with highest value (as an example)
 ```{r}
 finance %>% 
   filter(categories %in% c("personal - big", "personal - small")) %>% 
