@@ -12,7 +12,7 @@ month_infobox <- function(input, data) {
     
     infoBox(
       "Month", paste0(date_show), icon = icon("calendar"),
-      color = "teal", fill = TRUE
+      color = "light-blue", fill = TRUE
     )
     
   }

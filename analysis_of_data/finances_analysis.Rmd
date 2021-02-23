@@ -151,6 +151,15 @@ finance %>%
     y = "Total £"
   ) 
 ```
+```{r}
+finance %>% 
+  filter(date == "2020-06-01") %>% 
+  mutate(absolute = abs(value)) %>% 
+  group_by(categories) %>% 
+  summarise(spends_gains = sum(absolute)) %>% 
+  arrange(desc(spends_gains))
+```
+
 #gains and spends for the June 2020.
 ```{r}
 finance %>% 

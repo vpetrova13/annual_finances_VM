@@ -12,7 +12,7 @@ category_infobox <- function(input, data) {
     
     infoBox(
       "Category", paste0(category_value), icon = icon("list"),
-      color = "maroon", fill = TRUE
+      color = "aqua", fill = TRUE
     )
     
   }

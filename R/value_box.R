@@ -10,7 +10,7 @@ value_infobox <- function(input, data) {
     
     infoBox(
       "Total", paste0("£",value$total), icon = icon("chart-line"),
-      color = "purple", fill = TRUE
+      color = "teal", fill = TRUE
     )
     
   }
