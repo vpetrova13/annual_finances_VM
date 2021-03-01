@@ -140,6 +140,10 @@ finance_data_clean <- finance_data_clean %>%
 #check class of date column
 class(finance_data_clean$date)
 
+#remove sensitive data
+finance_data_clean <- finance_data_clean %>% 
+  select(-description)
+
 ## Write csv file of clean data
 write_csv(finance_data_clean, "finance_clean_data.csv")
 

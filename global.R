@@ -9,5 +9,5 @@ library(shinyWidgets)
 
 # general <- read_csv()
 
-finance <- read_csv(here("clean_data/finance_clean_data.csv"))
+finance <- read_csv(here("clean_data/finance_clean_synthetic.csv"))
 

@@ -1,0 +1,241 @@
+date,type,categories,value,balance
+2020-09-01,direct debit,car loan,-231.13,85.19
+2020-09-01,direct debit,council tax,-165,295.32
+2020-09-01,direct debit,LISA,14,422.32
+2020-09-01,digital banking payment,credit card,-8.329999999999998,445.32
+2020-09-01,digital banking payment,savings,-1214,485.65
+2020-09-01,bank automated clearing,husband,517,1669.65
+2020-08-01,digital banking payment,credit card,-37.33,1203.65
+2020-08-01,digital banking payment,rent,-504,1169.98
+2020-08-01,bank automated clearing,salary,1443.66,1610.98
+2020-08-01,point of sale,car insurance,-69.2,210.32
+2020-08-01,direct debit,LISA,-17,329.52
+2020-08-01,point of sale,personal - big,-4744,346.52
+2020-08-01,digital banking payment,credit card,-104,4959.52
+2020-08-01,digital banking payment,parents,1985,5078.52
+2020-08-01,digital banking payment,parents,3035,3112.52
+2020-08-01,direct debit,investment,26,107.52
+2020-08-01,direct debit,LISA,-15,60.519999999999996
+2020-08-01,digital banking payment,credit card,-43.33,109.52
+2020-08-01,point of sale,bonus,-6,68.85
+2020-08-01,bank automated clearing,husband,68,121.85
+2020-08-01,point of sale,investment,-81.58,26.85
+2020-08-01,direct debit,LISA,5,68.43
+2020-08-01,direct debit,utility bills,-51,15.43
+2020-08-01,digital banking payment,husband,-46,34.43
+2020-08-01,direct debit,LISA,-47,95.43
+2020-08-01,digital banking payment,husband,-51,68.43
+2020-08-01,digital banking payment,husband,39,51.43000000000001
+2020-08-01,direct debit,car loan,-156.13,103.43
+2020-08-01,direct debit,council tax,-102,303.56
+2020-08-01,digital banking payment,savings,-417,367.56
+2020-08-01,digital banking payment,savings,-617,835.56
+2020-08-01,bank automated clearing,husband,788,1355.56
+2020-07-01,digital banking payment,credit card,33.01,624.56
+2020-07-01,digital banking payment,rent,-452,588.55
+2020-07-01,point of sale,food,-38.54,1079.55
+2020-07-01,point of sale,personal - small,-55.49,1133.09
+2020-07-01,bank automated clearing,salary,1512.38,1135.58
+2020-07-01,point of sale,personal - small,-62,-364.8
+2020-07-01,direct debit,LISA,47,-410.8
+2020-07-01,digital banking payment,credit card,-160.6,-388.8
+2020-07-01,direct debit,LISA,41,-169.2
+2020-07-01,bank automated clearing,bonus,42,-134.2
+2020-07-01,direct debit,investment,-53,-197.2
+2020-07-01,point of sale,petrol,-87.45,-201.2
+2020-07-01,direct debit,LISA,-33,-164.75
+2020-07-01,digital banking payment,credit card,-88.8,-133.75
+2020-07-01,digital banking payment,credit card,2.619999999999999,-9.950000000000003
+2020-07-01,interest,credit card,-43.95,-28.57
+2020-07-01,direct debit,LISA,-30,-65.62
+2020-07-01,point of sale,utility bills,-16,-7.619999999999999
+2020-07-01,point of sale,parents,-483.94,-35.62
+2020-07-01,direct debit,council tax,-146,539.3199999999999
+2020-07-01,digital banking payment,parents,756,645.32
+2020-06-01,digital banking payment,parents,170,-174.68
+2020-06-01,point of sale,personal - small,1.3,-266.68
+2020-06-01,digital banking payment,rent,-484,-245.98000000000002
+2020-06-01,bank automated clearing,salary,1250.16,145.02
+2020-06-01,bank automated clearing,husband,715,-1033.1399999999999
+2020-06-01,point of sale,personal - big,-331.99,-1716.14
+2020-06-01,point of sale,personal - big,-442,-1456.15
+2020-06-01,digital banking payment,credit card,-191.24,-968.15
+2020-06-01,digital banking payment,savings,-90,-801.91
+2020-06-01,loan,car loan,78.95,-762.91
+2020-06-01,direct debit,investment,-18,-786.86
+2020-06-01,direct debit,LISA,-31,-749.86
+2020-06-01,direct debit,utility bills,-14.2,-713.86
+2020-06-01,direct debit,LISA,45,-750.66
+2020-06-01,digital banking payment,credit card,-187.67,-757.66
+2020-06-01,interest,credit card,-53.03,-573.99
+2020-06-01,digital banking payment,savings,-81,-583.96
+2020-06-01,direct debit,car loan,-169.78,-534.96
+2020-06-01,point of sale,personal - small,-62.94,-407.18
+2020-06-01,point of sale,bonus,46.71,-415.24
+2020-06-01,direct debit,council tax,-178,-410.95
+2020-06-01,direct debit,LISA,10,-300.95
+2020-06-01,digital banking payment,husband,13,-311.95
+2020-05-01,digital banking payment,rent,-494,-254.95
+2020-05-01,bank automated clearing,husband,867,228.05
+2020-05-01,bank automated clearing,salary,1230.72,-672.95
+2020-05-01,direct debit,LISA,44,-1941.67
+2020-05-01,point of sale,personal - small,-43.45,-1928.67
+2020-05-01,digital banking payment,credit card,-227.08,-1916.22
+2020-05-01,bank automated clearing,personal - small,75.42,-1629.14
+2020-05-01,digital banking payment,savings,-39,-1708.56
+2020-05-01,direct debit,investment,5,-1625.56
+2020-05-01,direct debit,LISA,-13,-1653.56
+2020-05-01,direct debit,LISA,-5,-1645.56
+2020-05-01,direct debit,utility bills,-35,-1620.56
+2020-05-01,digital banking payment,personal - big,-1973,-1600.56
+2020-05-01,digital banking payment,savings,-6,400.44
+2020-05-01,bank automated clearing,savings,1007.7,425.44
+2020-05-01,bank automated clearing,husband,836,-614.26
+2020-05-01,direct debit,car loan,-204.78,-1403.26
+2020-05-01,direct debit,LISA,12,-1281.48
+2020-05-01,direct debit,council tax,-116,-1321.48
+2020-04-01,point of sale,personal - big,-2024.54,-1180.48
+2020-04-01,bank automated clearing,savings,2027,822.06
+2020-04-01,direct debit,LISA,-48,-1166.94
+2020-04-01,digital banking payment,personal - small,-18,-1105.94
+2020-04-01,point of sale,savings,-9,-1151.94
+2020-04-01,digital banking payment,credit card,-85.63999999999999,-1116.94
+2020-04-01,digital banking payment,savings,-1981,-1016.3
+2020-04-01,digital banking payment,rent,-477,1018.7
+2020-04-01,bank automated clearing,salary,1160.14,1495.7
+2020-04-01,bank automated clearing,personal - small,-24.99,256.56
+2020-04-01,direct debit,LISA,-20,335.55
+2020-04-01,direct debit,investment,-70,344.55
+2020-04-01,direct debit,LISA,-38,337.55
+2020-04-01,direct debit,utility bills,-21,305.55
+2020-04-01,direct debit,LISA,-7,368.55
+2020-04-01,direct debit,car loan,-120.78,365.55
+2020-04-01,digital banking payment,credit card,-139.88,457.33
+2020-04-01,bank automated clearing,husband,241,628.21
+2020-04-01,direct debit,council tax,-167.3,443.21
+2020-04-01,direct debit,council tax,-50.96,501.51
+2020-03-01,direct debit,LISA,-24,562.47
+2020-03-01,point of sale,personal - small,39,546.47
+2020-03-01,point of sale,food,24.1,546.47
+2020-03-01,digital banking payment,credit card,-446.46,556.37
+2020-03-01,digital banking payment,rent,-438,1033.83
+2020-03-01,bank automated clearing,salary,1390.66,1439.83
+2020-03-01,cash line,food,-51,101.17
+2020-03-01,direct debit,LISA,-23,102.17
+2020-03-01,digital banking payment,credit card,-124.78,40.17
+2020-03-01,point of sale,investment,-162,220.95
+2020-03-01,digital banking payment,husband,-31,404.95
+2020-03-01,direct debit,utility bills,-54.9,382.95
+2020-03-01,direct debit,investment,21,445.85
+2020-03-01,direct debit,LISA,34,457.85
+2020-03-01,direct debit,utility bills,42,447.85
+2020-03-01,direct debit,LISA,31,417.85
+2020-03-01,NA,credit card,69,450.85
+2020-03-01,point of sale,utility bills,-1.07,406.85
+2020-03-01,direct debit,car loan,-153.78,405.92
+2020-03-01,direct debit,utility bills,-43,546.7
+2020-03-01,direct debit,LISA,39,604.7
+2020-03-01,point of sale,husband,-46.66,658.7
+2020-02-01,digital banking payment,savings,-514,720.36
+2020-02-01,digital banking payment,credit card,-214.97,1135.36
+2020-02-01,digital banking payment,rent,-427,1416.33
+2020-02-01,bank automated clearing,salary,1381.78,1840.33
+2020-02-01,cash line,food,-40,419.55
+2020-02-01,direct debit,LISA,1,512.55
+2020-02-01,direct debit,utility bills,-16.9,436.55
+2020-02-01,direct debit,investment,13,525.45
+2020-02-01,direct debit,LISA,39,457.45
+2020-02-01,cash line,personal - small,11,541.45
+2020-02-01,direct debit,LISA,46,498.45000000000005
+2020-02-01,digital banking payment,credit card,-124.66,521.45
+2020-02-01,interest,credit card,30.6,695.11
+2020-02-01,direct debit,utility bills,-40,635.51
+2020-02-01,point of sale,investment,-9,692.51
+2020-02-01,direct debit,car loan,-186.78,648.51
+2020-02-01,direct debit,utility bills,-96,807.29
+2020-02-01,direct debit,LISA,-48,905.29
+2020-01-01,cash line,food,26,900.29
+2020-01-01,direct debit,LISA,-37,877.29
+2020-01-01,international transfer,bonus,117,902.29
+2020-01-01,digital banking payment,credit card,-13.489999999999998,887.29
+2020-01-01,digital banking payment,savings,-516,844.78
+2020-01-01,digital banking payment,credit card,-100.94999999999999,1360.78
+2020-01-01,digital banking payment,rent,-425,1552.73
+2020-01-01,digital banking payment,parents,-26,1977.73
+2020-01-01,digital banking payment,parents,-1999,2008.73
+2020-01-01,bank automated clearing,savings,1659.32,3939.73
+2020-01-01,bank automated clearing,salary,1392.87,2345.41
+2020-01-01,bank automated clearing,bonus,2297,940.54
+2020-01-01,direct debit,LISA,25,-1302.46
+2020-01-01,point of sale,investment,30,-1302.46
+2020-01-01,point of sale,investment,-42,-1386.46
+2020-01-01,direct debit,investment,-70,-1294.46
+2020-01-01,direct debit,utility bills,-48.989999999999995,-1333.46
+2020-01-01,direct debit,LISA,23,-1299.47
+2020-01-01,direct debit,utility bills,18,-1338.47
+2020-01-01,direct debit,LISA,-44,-1318.47
+2020-01-01,digital banking payment,credit card,-285.03,-1324.47
+2020-01-01,digital banking payment,parents,-16,-981.44
+2020-01-01,NA,credit card,202.97,-892.44
+2020-01-01,direct debit,car loan,-154.78,-1062.41
+2020-01-01,direct debit,council tax,-48,-937.63
+2020-01-01,direct debit,utility bills,-84,-834.63
+2019-12-01,direct debit,LISA,9,-780.63
+2019-12-01,direct debit,LISA,20,-814.63
+2019-12-01,point of sale,husband,-1297.84,-725.63
+2019-12-01,point of sale,husband,-1665.3,577.21
+2019-12-01,digital banking payment,credit card,-43.77,2235.51
+2019-12-01,bank automated clearing,savings,1487,2302.28
+2019-12-01,cash line,food,-18,743.28
+2019-12-01,digital banking payment,rent,-483,750.28
+2019-12-01,bank automated clearing,salary,1452.87,1277.28
+2019-12-01,direct debit,investment,-4,-131.59
+2019-12-01,direct debit,LISA,-44,-124.59
+2019-12-01,bank automated clearing,bonus,13.36,-187.59
+2019-12-01,direct debit,utility bills,-55.989999999999995,-116.94999999999999
+2019-12-01,direct debit,utility bills,1,-166.96
+2019-12-01,direct debit,LISA,-6,-155.96
+2019-12-01,direct debit,car loan,-121.78,-103.96
+2019-12-01,point of sale,personal - big,-259,55.82
+2019-12-01,direct debit,utility bills,-35,308.82
+2019-12-01,direct debit,council tax,-139,379.82
+2019-12-01,direct debit,LISA,4,490.82
+2019-11-01,digital banking payment,credit card,-275.12,446.82
+2019-11-01,digital banking payment,credit card,-45.97,792.94
+2019-11-01,digital banking payment,rent,-429,825.91
+2019-11-01,bank automated clearing,salary,1397.77,1285.91
+2019-11-01,direct debit,LISA,20,-100.86000000000001
+2019-11-01,digital banking payment,parents,229,-131.86
+2019-11-01,direct debit,investment,13,-384.86
+2019-11-01,direct debit,LISA,-12,-362.86
+2019-11-01,direct debit,utility bills,-8.989999999999998,-354.86
+2019-11-01,direct debit,LISA,29,-268.87
+2019-11-01,direct debit,utility bills,27,-327.87
+2019-11-01,digital banking payment,credit card,-100.41999999999999,-293.87
+2019-11-01,direct debit,car loan,-192.78,-137.45
+2019-11-01,direct debit,LISA,-43,-17.67
+2019-11-01,direct debit,utility bills,-22.64,40.33
+2019-11-01,direct debit,council tax,-83,190.97
+2019-10-01,point of sale,car insurance,-507.76,212.97
+2019-10-01,digital banking payment,credit card,-387.33,688.73
+2019-10-01,digital banking payment,rent,-509,1100.06
+2019-10-01,bank automated clearing,salary,1401.6,1583.06
+2019-10-01,bank automated clearing,bonus,64,108.46000000000001
+2019-10-01,direct debit,investment,-64,105.46
+2019-10-01,point of sale,petrol,-36.6,78.46
+2019-10-01,direct debit,utility bills,-50.989999999999995,167.06
+2019-10-01,direct debit,utility bills,1,117.05000000000001
+2019-10-01,digital banking payment,savings,-139,143.05
+2019-10-01,direct debit,car loan,-163.78,254.05
+2019-10-01,cash line,personal - small,-45,378.83
+2019-10-01,direct debit,utility bills,-44.64,393.83
+2019-10-01,direct debit,council tax,-91,457.47
+2019-10-01,digital banking payment,credit card,-469.42,628.47
+2019-09-01,cash line,personal - small,-73,996.8900000000001
+2019-09-01,digital banking payment,rent,-489,1037.89
+2019-09-01,point of sale,bonus,-6,1502.89
+2019-09-01,bank automated clearing,salary,1404.6,1572.89
+2019-09-01,cash line,personal - small,-62,68.29
+2019-09-01,direct debit,investment,-18,120.29
+2019-09-01,direct debit,car insurance,-62.19,109.28999999999999
+2019-09-01,direct debit,utility bills,28.01,158.48
