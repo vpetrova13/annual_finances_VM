@@ -10,21 +10,16 @@ At that time, my mobile bank app did not have budget and spendings tab so in Dec
 
 ### First personal project
 
-After graduating with Data Analysis course in Code Clan, I have decided to do analysis over one year of bank transactions using new tools such as R and Shiny.
+After graduating with Data Analysis course from Code Clan, I have decided to do analysis over one year of my bank transactions using new tools such as R and Shiny.
 
 **Synthetic dataset was created for demo purposes.**
 
 Original dataset is author's bank transactions over one year from Oct 2019 till Oct 2020.
 
-## Personal App
+## The dashboard
 The user can explore and visualise the annual spends and gains by categories and monthly spends and gains by categories. The app has info boxes pointing for the month and category with the highest spend/gain and table with top spends/gains over the chosen month. 
 
 The link for the app can be found **[here](https://veronika13.shinyapps.io/annual_finances)**.
-
-### Datasets 
-Both datasets required some cleaning and wrangling. Using filter function from tidyverse package, the user can interact with dashboard and explore more by choosing different variables such as year, gender, age range and NHS health board.
-
-### The dashboard
 
 ## Images 
 ### Description tab 
