@@ -54,25 +54,26 @@ dashboardPage(
               ),
               tabItem("description",
                       fluidRow(
-                        box(width = 3, status = "primary", 
+                        box(status = "primary", 
                           img(src ="hand_coin_pound_finance_icon_125507.png",
                               width = 400, height = 400)),
-                        box(width = 8,
+                        box(
                           title = h3("About App"), status = "primary", solidHeader = TRUE, 
                           h5("This is a dashboard that visualises the annual and monthly earnings and spends by categories
                           from October 2019 till October 2020."),
+                          br(),
                           h5(strong("Aim of the app:")),
                           h5("To show which category accounts for the highest spendings/gains."),
                           br(),
-                          h5(strong("App description:")),
-                          h5("If a bar is positive, then a category caused an income."),
-                          h5("If a bar is negative, then a category caused an outcome."), 
-                          h5("The 'Yearly' tab allows to see how much the chosen category varied throughout the year.
+                          h5(strong("App description:")), 
+                          tags$li("The 'Yearly' tab allows to see how much the chosen category varied throughout the year.
                              It allows to see which month had the highest or lowest spend/gain."),
-                          h5("The 'Monthly' tab allows to see all categories and how they varied throughout the chosen month.
+                          tags$li("The 'Monthly' tab allows to see all categories and how they varied throughout the chosen month.
                              It allows to see which category had the highest spend/gain."),
+                          tags$li("If a bar is positive, then a category caused an income."),
+                          tags$li("If a bar is negative, then a category caused an outcome."),
                           br(),
-                          h5("Data was synthesised for demontration purposes."),
+                          h5(strong("Data was synthesised for demontration purposes.")),
                           h5("Original source of dataset for the app is Author's transaction file from personal bank account.")
                         )
                       )
