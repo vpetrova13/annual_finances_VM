@@ -6,18 +6,17 @@ When I started my first job after graduation from university and became independ
 
 Since then I became interested in Personal finance and started to read online articles about it. All experts had in common the same advice which was to start calculate the budget and plan it. Calculate earnings and spendings per month or week. 
 
-At that time, my mobile bank app did not have budget and spendings tab so in December 2018, I started to use Microsoft Excel for regular monthly analysis of bank transactions in order to find the insights and finally start saving up money for various prominent reasons.
+At that time, my mobile bank app did not have budget and spendings tab so in December 2018, I started to use Microsoft Excel for regular monthly analysis of bank transactions in order to find the insights and finally start saving up money for various reasons.
 
 ### First personal project
 
 After graduating with Data Analysis course from Code Clan, I have decided to do analysis over one year of my bank transactions using new tools such as R and Shiny.
 
-**Synthetic dataset was created for demo purposes.**
-
+**Synthetic dataset was created for demonstration purposes.** 
 Original dataset is author's bank transactions over one year from Oct 2019 till Oct 2020.
 
 ## The dashboard
-The user can explore and visualise the annual spends and gains by categories and monthly spends and gains by categories. The app has info boxes pointing for the month and category with the highest spend/gain and table with top spends/gains over the chosen month. 
+The user can explore and visualise the annual spends and gains by categories and monthly spends and gains by categories. The app has info boxes which point for the month and category with the highest spend/gain and table with top spends/gains over the chosen month. 
 
 The link for the app can be found **[here](https://veronika13.shinyapps.io/annual_finances)**.
 
